@@ -24,7 +24,7 @@ function setNewSize(textarea) {
        <p>${task}</p>
        <button class="btn--delete">Delete</button>
        </li>`;
-     container.insertAdjacentHTML("beforeend", template);
+     container.insertAdjacentHTML("afterbegin", template);
      tasks = document.querySelectorAll(".todo__tasks .task");
      const el = tasks[tasks.length - 1];
      const btn = el.querySelector(".btn--delete");
