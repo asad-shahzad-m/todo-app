@@ -647,6 +647,10 @@ input[type="checkbox"]:checked::before {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.task--add .new--btn:hover {
+  opacity: 0.5;
+}
+
 .header__wrapper {
   position: sticky;
   top: 0px;
