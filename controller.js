@@ -18,7 +18,7 @@ function setNewSize(textarea) {
  
  const appendTask = function (task, container) {
    if (task.length) {
-      tasksArray.push(task.toLowerCase());
+      tasksArray.unshift(task.toLowerCase());
      const template = `<li class="task">
        <input type="checkbox" />
        <p>${task}</p>
@@ -36,7 +36,7 @@ function setNewSize(textarea) {
  
  const removeTask = function (taskEl) {
    taskEl.remove();
-   tasksArray.pop();
+   tasksArray.shift();
    return taskEl;
  };
  
